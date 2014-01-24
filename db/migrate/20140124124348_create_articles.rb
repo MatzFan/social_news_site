@@ -6,5 +6,6 @@ class CreateArticles < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_foreign_key(:articles, :users)
   end
 end

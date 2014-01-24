@@ -10,9 +10,11 @@ group :development, :test do
   gem 'factory_girl_rails', "~> 4.0"
 end
 
+gem 'foundation-rails'
+gem 'foundation_rails_helper'
 gem 'haml-rails'
 gem 'devise'
-
+gem 'foreigner'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

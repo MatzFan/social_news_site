@@ -59,6 +59,14 @@ GEM
     factory_girl_rails (4.3.0)
       factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
+    foreigner (1.6.1)
+      activerecord (>= 3.0.0)
+    foundation-rails (5.0.3.1)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
+    foundation_rails_helper (0.4)
+      actionpack (>= 3.0)
+      railties (>= 3.0)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -167,6 +175,9 @@ DEPENDENCIES
   database_cleaner
   devise
   factory_girl_rails (~> 4.0)
+  foreigner
+  foundation-rails
+  foundation_rails_helper
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
