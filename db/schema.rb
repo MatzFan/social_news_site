@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140124160450) do
+ActiveRecord::Schema.define(version: 20140124182221) do
 
   create_table "articles", force: true do |t|
     t.integer  "user_id"
@@ -40,19 +40,6 @@ ActiveRecord::Schema.define(version: 20140124160450) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  create_table "votes", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "article_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "votes", ["article_id"], name: "index_votes_on_article_id", using: :btree
-  add_index "votes", ["user_id"], name: "index_votes_on_user_id", using: :btree
-
   add_foreign_key "articles", "users", name: "articles_user_id_fk"
-
-  add_foreign_key "votes", "articles", name: "votes_article_id_fk"
-  add_foreign_key "votes", "users", name: "votes_user_id_fk"
 
 end
