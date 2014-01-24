@@ -6,10 +6,13 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rails_layout'
-
+  gem 'database_cleaner'
+  gem 'factory_girl_rails', "~> 4.0"
 end
 
 gem 'haml-rails'
+gem 'devise'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
