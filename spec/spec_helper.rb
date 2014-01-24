@@ -20,6 +20,8 @@ ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
 
+  config.include FactoryGirl::Syntax::Methods
+
   # for database_cleaner
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
