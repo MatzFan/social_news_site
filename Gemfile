@@ -11,7 +11,7 @@ group :development, :test do
 end
 
 gem 'foundation-rails'
-gem 'foundation_rails_helper'
+gem 'foundation_rails_helper', github: 'MatzFan/foundation_rails_helper'
 gem 'haml-rails'
 gem 'devise'
 gem 'foreigner'
@@ -48,7 +48,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'sdoc',          group: :doc, require: false
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/jonleighton/spring
-gem 'spring',        group: :development
+gem 'spring', '~> 1.0.0',       group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

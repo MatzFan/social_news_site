@@ -1,7 +1,7 @@
 class CreateArticles < ActiveRecord::Migration
   def change
     create_table :articles do |t|
-      t.belongs_to :user, index: true
+      t.belongs_to :user, index: true, presence: true
       t.text :content
 
       t.timestamps
