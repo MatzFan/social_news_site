@@ -10,7 +10,7 @@ group :development, :test do
   gem 'factory_girl_rails', "~> 4.0"
 end
 
-gem 'thin'
+gem 'unicorn'
 gem 'websocket-rails'
 gem 'foundation-rails'
 gem 'foundation_rails_helper', github: 'MatzFan/foundation_rails_helper'
