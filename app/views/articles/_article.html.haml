@@ -1,1 +1,6 @@
-= article.content
+.article
+  %p= article.content
+  / remote: true sends an AJAX request, so page refresh not required
+  = button_to 'Upvote', article_votes_path(article, up: true), remote: true
+  .vote-count{ data: { id: article.id } }
+    = article.net_vote_count

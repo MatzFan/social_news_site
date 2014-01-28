@@ -15,9 +15,9 @@ describe "authenticated user" do
   context "upvoting an existing article" do
     specify "should result in that article's vote count increasing by 1" do
       visit '/articles'
-      click_link 'Upvote'
-      expect(current_path).to eq('/articles/votes')
-      expect(page).to have_content('Some content')
+      click_button 'Upvote'
+      expect(current_path).to eq('/articles')
+      expect(page).to have_css('.vote-count', text: 1)
     end
   end
 

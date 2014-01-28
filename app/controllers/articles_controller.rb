@@ -7,7 +7,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    puts "HERE"
     @article = Article.new(params[:article].permit(:content))
     current_user.articles << @article
     if @article.save
@@ -21,7 +20,5 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
   end
-
-
 
 end # of class

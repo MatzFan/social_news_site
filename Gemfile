@@ -10,12 +10,13 @@ group :development, :test do
   gem 'factory_girl_rails', "~> 4.0"
 end
 
+gem 'thin'
+gem 'websocket-rails'
 gem 'foundation-rails'
 gem 'foundation_rails_helper', github: 'MatzFan/foundation_rails_helper'
 gem 'haml-rails'
 gem 'devise'
 gem 'foreigner'
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0.beta1'
