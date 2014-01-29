@@ -7,7 +7,15 @@
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
         %span Menu
+    %li.has-form
   .top-bar-section
-    %ul.hemnu.right
+    %ul.left
+      %li.has-form
+        .row.collapse
+          .large-8.small-4.columns
+            %input{placeholder: "Search articles", type: "text"}/
+          .large-4.small-5.columns
+            %a.alert.button.expand{href: "#"} Search
+    %ul.hmenu.right
       = render 'devise/menu/registration_items'
       = render 'devise/menu/login_items'

@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery.tinysort
 //= require jquery_ujs
-//= require turbolinks
 //= require foundation
 //= require websocket_rails/main
 
