@@ -3,8 +3,13 @@
   %head
     %title SocialNewsSite
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    / required by Foundation5
+    = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    = yield
-
+    %header
+      = render 'layouts/navigation'
+      %main{role: "main"}
+      = render 'layouts/messages'
+      = yield
